@@ -240,6 +240,7 @@ gulp.task('connect', function() {
     port: 9000
   }, function (){
     browserSync({
+      browser: 'firefoxdeveloperedition',
       proxy: config.devUrl,
       snippetOptions: {
         whitelist: ['/wp-admin/admin-ajax.php'],
