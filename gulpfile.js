@@ -6,6 +6,7 @@ var browserSync = require('browser-sync');
 var gulp        = require('gulp');
 var lazypipe    = require('lazypipe');
 var merge       = require('merge-stream');
+var connect     = require('gulp-connect-php');
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -232,6 +233,32 @@ gulp.task('watch', function() {
     browserSync.reload();
   });
 });
+
+gulp.task('connect', function() {
+  connect.server({
+    base: '../../../',
+    port: 9000
+  }, function (){
+    browserSync({
+      proxy: config.devUrl,
+      snippetOptions: {
+        whitelist: ['/wp-admin/admin-ajax.php'],
+        blacklist: ['/wp-admin/**']
+      }
+    });
+  });
+ 
+  gulp.watch([path.source + 'styles/**/*'], ['styles']);
+  gulp.watch([path.source + 'scripts/**/*'], ['jshint', 'scripts']);
+  gulp.watch([path.source + 'fonts/**/*'], ['fonts']);
+  gulp.watch([path.source + 'images/**/*'], ['images']);
+  gulp.watch(['bower.json', 'assets/manifest.json'], ['build']);
+  gulp.watch('**/*.php', function() {
+    browserSync.reload();
+  });
+});
+
+
 
 // ### Build
 // `gulp build` - Run all the build tasks but don't clean up beforehand.
