@@ -235,6 +235,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('connect', function() {
+  gulp.start('build');
   connect.server({
     base: '../../../',
     port: 9000
