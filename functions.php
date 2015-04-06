@@ -20,6 +20,8 @@ $sage_includes = [
   'lib/nav.php',                   // Custom nav modifications
   'lib/gallery.php',               // Custom [gallery] modifications
   'lib/extras.php',                // Custom functions
+  'lib/wp-bootstrap-navwalker/wp_bootstrap_navwalker.php',
+  'lib/stonyray.php'               // All stonyray theme adjustments 
 ];
 
 foreach ($sage_includes as $file) {
