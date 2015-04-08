@@ -21,9 +21,9 @@ use Roots\Sage\Wrapper;
       ?>
 
       <div class="container">
-        <div class="content row sam-content">
+        
           <?php include Wrapper\template_path(); ?>
-        </div><!-- /.content -->
+        
       </div>
     </div><!-- /.wrap -->
     <?php
