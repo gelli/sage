@@ -59,30 +59,6 @@ add_action( 'init', function () {
     register_nav_menu('header-right-menu', __('Right Header Menu'));
 });
 
-
-add_action( 'widgets_init', function () {
-
-    register_sidebar( array(
-        'name'          => __( 'Sidebar Widget Area', 'greyskull14' ),
-        'id'            => 'sidebar-1',
-        'description'   => __( 'Appears in the sidebar section of the site.', 'greyskull14' ),
-        'before_widget' => '<div id="%1$s" class="row widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
-    ) );
-
-    register_sidebar( array(
-        'name'          => __( 'Footer Widget Area', 'greyskull14' ),
-        'id'            => 'footer-1',
-        'description'   => __( 'Appears in the footer section of the site.', 'greyskull14' ),
-        'before_widget' => '<div id="%1$s" class="col-md-4 %2$s"><div class="row-centered text-left">',
-        'after_widget'  => '</div></div>',
-        'before_title'  => '<h1>',
-        'after_title'   => '</h1><hr/>',
-    ) );
-});
-
 // Replaces the excerpt "more" text by a link
 add_filter('excerpt_more', function ($more) {
     global $post;

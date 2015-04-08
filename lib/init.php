@@ -45,7 +45,28 @@ add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
  * Register sidebars
  */
 function widgets_init() {
-  register_sidebar([
+
+  register_sidebar( array(
+    'name'          => __( 'Sidebar Widget Area', 'greyskull14' ),
+    'id'            => 'sidebar-primary',
+    'description'   => __( 'Appears in the sidebar section of the site.', 'greyskull14' ),
+    'before_widget' => '<div id="%1$s" class="row widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2 class="widget-title">',
+    'after_title'   => '</h2>',
+  ));
+
+  register_sidebar( array(
+    'name'          => __( 'Footer Widget Area', 'greyskull14' ),
+    'id'            => 'footer-1',
+    'description'   => __( 'Appears in the footer section of the site.', 'greyskull14' ),
+    'before_widget' => '<div id="%1$s" class="col-md-4 %2$s"><div class="row-centered text-left">',
+    'after_widget'  => '</div></div>',
+    'before_title'  => '<h1>',
+    'after_title'   => '</h1><hr/>',
+  ));
+
+  /* register_sidebar([
     'name'          => __('Primary', 'sage'),
     'id'            => 'sidebar-primary',
     'before_widget' => '<section class="widget %1$s %2$s">',
@@ -61,6 +82,6 @@ function widgets_init() {
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
     'after_title'   => '</h3>'
-  ]);
+  ]);*/
 }
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
