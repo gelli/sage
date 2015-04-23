@@ -33,7 +33,7 @@ add_action( 'after_setup_theme', function () {
     // Enable support for Post Thumbnails for image wall
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 400, 400 );
-    add_image_size("image-wall", 380, 253, true);
+    add_image_size("image-wall", 570, 380, true);
 
     /*
      * Switch default core markup for search form, comment form, and comments
@@ -51,6 +51,12 @@ add_action('do_robotstxt', function () {
   echo "Sitemap: ".get_site_url()."/sitemap_index.xml\n";
 });
 
+add_action('pre_get_posts', function ($query) {
+  if ($query->is_home() && $query->is_main_query()) {
+        $query->set('posts_per_page', '5');
+    }
+});
+
 /**
  * header register menus
  */
@@ -64,9 +70,9 @@ add_filter('excerpt_more', function ($more) {
     global $post;
 
     return
-        '<p><a class="moretag" href="'. get_permalink($post->ID) . '">'
-        .__( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyfourteen' )
-        .'</a></p>';
+      ' ... <a class="moretag" href="'. get_permalink($post->ID) . '">'
+        .__('weiterlesen', 'twentyfourteen' )
+        .'</a>';
 });
 
 /**

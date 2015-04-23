@@ -40,6 +40,21 @@
 @import 'components/navbar';
 @import 'components/woocommerce';
 
+.sam-content {
+  margin-top: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.sam-content [class*="col-"] {
+    padding:5px;
+}
+
+.entry-card-content {
+  padding: 0 5px;
+  margin-top: 10px;
+}
+
 .space-top {
   margin-top: 20px;
 }
@@ -303,14 +318,24 @@ a:focus {
 
 .featured-posts,
 #featured-posts {
-  background-color: @color-yellow;
   padding: 5px;
+  background-color: @color-yellow;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 10px;
   color: #ffffff;
 }
 
+.featured-posts a {
+  margin: -5px;
+  padding: 5px;
+  color: #fff;
+  display: block;
+}
+
+.featured-posts a:hover {
+  background-color: @color-darkblue;
+}
 
 .welcome h1,
 .h1,
@@ -556,7 +581,7 @@ div.sam-section-row {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   background-color: white;
   color: @color-text-main;
   -webkit-font-smoothing: antialiased;
