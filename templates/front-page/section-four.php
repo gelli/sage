@@ -15,8 +15,8 @@ use Roots\Sage\Assets;
       </article>
       <article class="text-center">
         <div class="lbb-feature">
-          <a href="<?php echo get_permalink(13632); ?>">
-            <?php echo get_the_post_thumbnail(13632, "image-wall", array('class' => 'img-responsive lbb-feature-image')); ?>
+          <a href="<?php echo get_permalink(12934); ?>">
+            <?php echo get_the_post_thumbnail(12934, "image-wall", array('class' => 'img-responsive lbb-feature-image')); ?>
           </a>
         </div>
       </article>
