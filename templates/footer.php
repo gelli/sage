@@ -5,8 +5,9 @@
 </footer> -->
 
 <footer class="container-fluid">
+    <div class="container">
     <div class="row">
-        <div class="col-md-4 col-sm-4 text-center">
+        <div class="col-md-4 col-sm-4">
             <div class="row-centered text-left">
                 <h1>Kontakt</h1>
                 <hr/>
@@ -28,7 +29,7 @@
               </p>
               </div>
         </div>
-        <div class="col-md-4 col-sm-4 text-center">
+        <div class="col-md-4 col-sm-4">
             <div class="row-centered social-contact">
                 <div class="social-link"><a rel="nofollow" href="https://www.facebook.com/littlebluebag" target="_blank"><span class="sam-icon">&#xf101;</span> Like us on facebook</a></div>
                 <div class="social-link"><a rel="nofollow" href="https://plus.google.com/112711029813738652601/posts" target="_blank">follow us on google <span class="sam-icon">&#xf102;</span></a></div>
@@ -40,7 +41,7 @@
             </div>
         </div>
 
-        <div class="col-md-4 col-sm-4 text-center">
+        <div class="col-md-4 col-sm-4">
             <div class="row-centered text-left">
                 <h1>Werde Gastblogger!</h1>
                 <hr/>
@@ -56,6 +57,6 @@
                 </p>
             </div>
         </div>
-
+    </div>
     </div>
 </footer>

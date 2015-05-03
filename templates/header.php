@@ -37,6 +37,7 @@ use Roots\Sage\Assets;
   <div class="row">
       <nav data-spy="affix" data-offset-top="147" id="sam-main-nav" class="navbar navbar-sam navbar-static-top navbar-default" role="navigation">
           <div class="container-fluid">
+            <div class="container">
               <div class="navbar-header">
                   <button type="button" class="navbar-toggle" data-toggle="collapse"
                           data-target="#bs-example-navbar-collapse-1">
@@ -78,6 +79,7 @@ use Roots\Sage\Assets;
                   ?>
               </div>
           </div>
+        </div>
       </nav>
   </div><!-- /navbar -->
 </div>
