@@ -126,23 +126,29 @@ add_action( 'customize_register', function ( $wp_customize ) {
         $cats[$category->term_id] = $category->name;
     }
 
-    $wp_customize->add_setting('lbb_custom_cat_1', array(
-      'default'        => $default
-    ));
-
-    $wp_customize->add_control( 'cat_1_select_box', array(
-      'settings' => 'lbb_custom_cat_1',
-      'label'   => 'Select Category:',
-      'section'  => 'lbb_custom_frontpage_categories',
-      'type'    => 'select',
-      'choices' => $cats,
-    ));
-
     $wp_customize->add_section( 'lbb_custom_frontpage_categories' , array(
-      'title'      => __( 'Custom Category #1', 'littlebluebag' ),
-      'priority'   => 30,
+      'title'      => __( 'Frontpage Custom Categories', 'littlebluebag' ),
+      'priority'   => 30 + $i,
     ) );
 
+    for ($i = 1; $i <= 5; $i++) {
+
+        $categoryName = 'lbb_custom_cat_'.$i;
+        $selectName = 'cat_'.$i.'_select_box';
+        $categoryTitle = 'Custom Category #'.$i;
+
+        $wp_customize->add_setting($categoryName, array(
+          'default'        => $default
+        ));
+
+        $wp_customize->add_control( $selectName, array(
+          'settings' => $categoryName,
+          'label'   => $categoryTitle,
+          'section'  => 'lbb_custom_frontpage_categories',
+          'type'    => 'select',
+          'choices' => $cats,
+        ));
+    }
 });
 
 /**

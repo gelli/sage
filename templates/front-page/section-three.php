@@ -6,7 +6,7 @@ use Roots\Sage\Assets;
   <div class="col-md-8">
 <!-- Most Read Articles -->
 <?php
-$sectionCategory = get_theme_mod('lbb_custom_cat_1');
+$sectionCategory = get_theme_mod('lbb_custom_cat_2');
 if ($sectionCategory) :
 
   $category = lbb_get_category($sectionCategory);

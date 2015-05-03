@@ -12,6 +12,9 @@
  <?php get_template_part('templates/front-page/section', 'one'); ?>
  <?php get_template_part('templates/front-page/section', 'two'); ?>
  <?php get_template_part('templates/front-page/section', 'three'); ?>
+ <?php get_template_part('templates/front-page/section', 'four'); ?>
+ <?php get_template_part('templates/front-page/section', 'five'); ?>
+ <?php get_template_part('templates/front-page/section', 'six'); ?>
 
 
 <!-- pager -->
