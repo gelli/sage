@@ -3,17 +3,19 @@
 $sectionCategory = get_theme_mod('lbb_custom_cat_1');
 if ($sectionCategory) :
 
+  $category = lbb_get_category($sectionCategory);
+
   $query = new WP_Query( array (
     'post_type' => 'post',
     'posts_per_page' => '4',
-    'category_name' => lbb_get_category($sectionCategory)->slug
+    'category_name' => $category->slug,
   ));
 
   if ( $query->have_posts() ) : ?>
 
     <div class="row sam-content">
       <div class="col-xs-12">
-        <h2 id="featured-posts"><?php _e(lbb_get_category($sectionCategory)->description, 'littlebluebag' ); ?></h2>
+        <h2 id="featured-posts"><?php _e($category->description, 'littlebluebag' ); ?></h2>
       </div>
         <?php //// Start the Loop.
         while ( $query->have_posts() ) : $query->the_post(); ?>
@@ -37,5 +39,5 @@ if ($sectionCategory) :
 
         <?php endwhile; ?>
     </div>
-  <?php endif; 
+  <?php endif;
 endif;
