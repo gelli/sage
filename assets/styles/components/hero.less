@@ -1,0 +1,26 @@
+.hero-splash {
+    display: flex;
+    background-image: url('../images/04.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-top: 66.66%; /* (img-height / img-width * container-width) */
+                /* (853 / 1280 * 100) */
+}
+
+.hero-splash-text {
+  position: absolute;
+  left: 50%;
+  margin-left:-20%;
+  width:40%;
+  top: 0;
+  text-align:center;
+}
+
+/*
+<div style="position:relative;width:100%;">
+  <div style="position:absolute;left:50%;margin-left:-15%;top:50%;margin-top:-15%;width:30%;height:30%;"></div>
+</div>
+*/
