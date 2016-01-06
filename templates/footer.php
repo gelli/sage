@@ -13,7 +13,7 @@
                 <hr/>
                 <p><b>LittleBlueBag | Katrin and Sandra</b></p>
                 <p>
-                    Ina-Seidel-Str.7<br/>
+                    Allmendstr. 25<br/>
                     76684 Oestringen
                 </p>
                 <p>
