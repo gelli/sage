@@ -34,6 +34,7 @@ add_action( 'after_setup_theme', function () {
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 400, 400 );
     add_image_size("image-wall", 570, 380, true);
+    add_image_size("lbb-hero", 1150, 700, true);
 
     /*
      * Switch default core markup for search form, comment form, and comments
@@ -152,6 +153,29 @@ add_action( 'customize_register', function ( $wp_customize ) {
 });
 
 /**
+ * Add configuration option for hero splash image
+ */
+add_action('customize_register', function ($wp_customize) {
+   $wp_customize->add_section('lbb_section_frontpage_hero', array(
+     'title' => __('Frontpage Hero Image', 'littlebluebag'),
+     'priority' => 20
+   ));
+
+   $wp_customize->add_setting('lbb_hero_image', array(
+     'default'        => ''
+   ));
+
+   $wp_customize->add_control( new WP_Customize_Cropped_Image_Control( $wp_customize, 'lbb_hero_image', array(
+       'section'     => 'lbb_section_frontpage_hero',
+       'label'       => __( 'Croppable Image' ),
+       'flex_width'  => false, // Allow any width, making the specified value recommended. False by default.
+       'flex_height' => false, // Require the resulting image to be exactly as tall as the height attribute (default).
+       'width'       => 1150,
+       'height'      => 700
+   ) ) );
+});
+
+/**
  * i18n enabled category names
  *
  * @param $categoryId
@@ -233,5 +257,3 @@ function grayskull_numeric_posts_nav() {
 
     echo '</ul>' . "\n";
 }
-
-
