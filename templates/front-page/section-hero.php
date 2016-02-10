@@ -19,7 +19,7 @@ use Roots\Sage\Assets;
     background-image: url('<?php echo wp_get_attachment_image_url(absint( get_theme_mod( 'lbb_hero_image' )), 'lbb-hero'); ?>')
   }
 </style>
-<? } ?>
+<?php } ?>
 <div class="col-xs-12">
   <div class="hero-splash">
     <div class="hero-splash-logo">
