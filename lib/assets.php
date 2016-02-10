@@ -97,6 +97,11 @@ function bower_map_to_cdn($dependency, $fallback) {
 function assets() {
   wp_enqueue_style('sage_css', asset_path('styles/main.css'), false, null);
 
+  // fix sdm registering script and forcing jquery to be loaded in header
+  wp_deregister_script('sdm-scripts');
+  wp_register_script('sdm-scripts', WP_SIMPLE_DL_MONITOR_URL . '/js/sdm_wp_scripts.js', array('jquery'), null, true);
+  wp_enqueue_script('sdm-scripts');
+
   /**
    * Grab Google CDN's latest jQuery with a protocol relative URL; fallback to local if offline
    * jQuery & Modernizr load in the footer per HTML5 Boilerplate's recommendation: http://goo.gl/nMGR7P
