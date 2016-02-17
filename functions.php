@@ -21,8 +21,9 @@ $sage_includes = [
   'lib/gallery.php',               // Custom [gallery] modifications
   'lib/extras.php',                // Custom functions
   'lib/wp-bootstrap-navwalker/wp_bootstrap_navwalker.php',
-  'lib/stonyray.php',              // All stonyray theme adjustments 
-  'lib/woocommerce.php'            // Support for woocommerce shop plugin
+  'lib/stonyray.php',              // All stonyray theme adjustments
+  'lib/woocommerce.php',            // Support for woocommerce shop plugin
+  'lib/sensei.php'
 ];
 
 foreach ($sage_includes as $file) {
