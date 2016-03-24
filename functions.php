@@ -23,7 +23,8 @@ $sage_includes = [
   'lib/wp-bootstrap-navwalker/wp_bootstrap_navwalker.php',
   'lib/stonyray.php',              // All stonyray theme adjustments
   'lib/woocommerce.php',            // Support for woocommerce shop plugin
-  'lib/sensei.php'
+  'lib/sensei.php',
+  'lib/navigation.php'
 ];
 
 foreach ($sage_includes as $file) {
