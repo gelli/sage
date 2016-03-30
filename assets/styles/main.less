@@ -39,6 +39,7 @@
 @color-darkblue: #416a8a;
 @color-yellow: #f4d06f;
 
+@import 'components/hintbox';
 @import 'components/cards';
 @import 'components/icons';
 @import 'components/features';
@@ -557,11 +558,10 @@ div.sam-section-row {
   padding: 10px 0;
 }
 
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  background-color: #eee;
+  background-color: @color-lightblue;
   color: @color-text-main;
   -webkit-font-smoothing: antialiased;
 }

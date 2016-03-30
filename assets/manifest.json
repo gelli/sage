@@ -2,7 +2,8 @@
   "dependencies": {
     "main.js": {
       "files": [
-        "scripts/main.js"
+        "scripts/main.js",
+        "scripts/tinymce_hintbox.js"
       ],
       "main": true
     },
@@ -22,9 +23,14 @@
     },
     "modernizr.js": {
       "bower": ["modernizr"]
+    },
+    "tinymce_hintbox.js": {
+      "files": [
+        "scripts/tinymce_hintbox.js"
+      ]
     }
   },
   "config": {
-    "devUrl": "http://localhost:9000" 
+    "devUrl": "http://localhost:9000"
   }
 }
