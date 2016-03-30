@@ -15,12 +15,12 @@ if ($sectionCategory) :
 
     <div class="row sam-content">
       <div class="col-xs-12">
-        <h2 id="featured-posts"><?php _e($category->description, 'littlebluebag' ); ?></h2>
+        <h2 class="featured-posts featured-other"><?php _e($category->description, 'littlebluebag' ); ?></h2>
       </div>
         <?php //// Start the Loop.
         while ( $query->have_posts() ) : $query->the_post(); ?>
-
-            <article id="post-<?php the_ID(); ?>" class="col-md-3 col-sm-3 col-xs-12 entry-card">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <article id="post-<?php the_ID(); ?>" class="entry-card">
                 <a class="img-wrap" href="<?php the_permalink(); ?>">
                     <?php the_post_thumbnail("image-wall", array('class' => 'img-responsive lbb-feature-image')); ?>
                     <div><!-- <p><?php echo get_the_title(); ?> </p>--> </div>
@@ -36,8 +36,8 @@ if ($sectionCategory) :
                   <p><?php the_excerpt( __( 'weiterlesen <span class="meta-nav">&rarr;</span>', 'greyskull14'), true );?> </p>
                 </div>
             </article>
-
+          </div>
         <?php endwhile; ?>
     </div>
-  <?php endif; 
+  <?php endif;
 endif;

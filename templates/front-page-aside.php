@@ -2,7 +2,7 @@
 use Roots\Sage\Assets;
 ?>
 <div class="col-md-4 ">
-    <h2 class="featured-posts">Team</h2>
+    <h2 class="featured-posts featured-other">Team</h2>
     <div class="row">
         <div class="text-center col-xs-12 col-sm-6 col-md-12">
             <div class="teaser-box">

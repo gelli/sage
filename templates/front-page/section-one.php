@@ -15,15 +15,22 @@ if ($sectionCategory) :
 
     <div class="row sam-content">
       <div class="col-xs-12">
-        <h2 id="featured-posts"><?php _e($category->description, 'littlebluebag' ); ?></h2>
+        <h2 class="featured-posts featured-photos">
+          <a href="<?php echo get_category_link($category->cat_ID); ?>">
+            <?php _e($category->description, 'littlebluebag' ); ?>
+          </a>
+        </h2>
       </div>
+    </div>
+
+    <div class="row sam-content">
         <?php //// Start the Loop.
         while ( $query->have_posts() ) : $query->the_post(); ?>
-
-            <article id="post-<?php the_ID(); ?>" class="col-md-3 col-sm-3 col-xs-12 entry-card">
+          <div class="col-sm-12 col-md-3 col-xs-12">
+            <article id="post-<?php the_ID(); ?>" class="entry-card">
                 <a class="img-wrap" href="<?php the_permalink(); ?>">
                     <?php the_post_thumbnail("image-wall", array('class' => 'img-responsive lbb-feature-image')); ?>
-                    <div><!-- <p><?php echo get_the_title(); ?> </p>--> </div>
+                    <div></div>
                 </a>
                 <div class="entry-card-content">
                   <?php  printf( '<span class="small entry-date"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> <time class="entry-date" datetime="%2$s">%3$s</time></span>',
@@ -32,10 +39,10 @@ if ($sectionCategory) :
                     esc_html( get_the_date() ),
                     esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) )
                   ); ?>
-                  <!-- <p> <?php the_excerpt(); ?></p> -->
                   <p><?php the_excerpt( __( 'weiterlesen <span class="meta-nav">&rarr;</span>', 'greyskull14'), true );?> </p>
                 </div>
             </article>
+          </div>
 
         <?php endwhile; ?>
     </div>

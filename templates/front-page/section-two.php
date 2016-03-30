@@ -4,19 +4,23 @@ use Roots\Sage\Assets;
 
 <div class="row">
   <div class="col-md-4">
-    <h2 class="featured-posts">Unser Vlog</h2>
+    <h2 class="featured-posts featured-travel">
+      <a href="#">Unser Vlog</a>
+    </h2>
     <div class="teaser-box videoWrapper">
       <iframe src="//www.youtube.com/embed/?list=PLvr0Ef_Rv_qkBq1YZjyF2nLdWyAkwQk7L" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
   <div class="col-md-4">
-    <h2 class="featured-posts">Urlaubsfilme</h2>
+    <h2 class="featured-posts featured-travel">
+      <a href="#">Urlaubsfilme</a>
+    </h2>
     <div class="teaser-box videoWrapper">
       <iframe src="//www.youtube.com/embed/?list=PLvr0Ef_Rv_qmXMc-Qrq4eChzOJuYPW6FC" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
   <div class="col-md-4">
-    <h2 class="featured-posts">Lerne fotografieren</h2>
+    <h2 class="featured-posts featured-photos">Lerne fotografieren</h2>
     <a href="https://my.leadpages.net/leadbox/140f32873f72a2%3A13706bf69b46dc/5632908932939776/">
       <img class="img-responsive" src="<?php echo Assets\asset_path('images/ebook2.jpg');?>" border="1"/>
     </a>

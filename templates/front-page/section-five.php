@@ -1,7 +1,6 @@
 <?php
 use Roots\Sage\Assets;
 ?>
-
 <div class="row">
   <div class="col-sm-8">
 
@@ -19,7 +18,7 @@ use Roots\Sage\Assets;
 
       if ( $query->have_posts() ) : ?>
 
-          <h2 id="featured-posts"><?php _e($category->description, 'littlebluebag' ); ?></h2>
+          <h2 class="featured-posts featured-photos"><?php _e($category->description, 'littlebluebag' ); ?></h2>
           <div class="row">
               <?php //// Start the Loop.
               while ( $query->have_posts() ) : $query->the_post(); ?>
@@ -33,12 +32,12 @@ use Roots\Sage\Assets;
 
               <?php endwhile; ?>
           </div>
-      <?php endif; 
+      <?php endif;
     endif; ?>
   </div>
 
   <div class="col-sm-4">
-    <h2 class="featured-posts">Newsletter</h2>
+    <h2 class="featured-posts featured-other">Newsletter</h2>
     <div class="row">
       <div class="col-sm-12">
         <a href="https://my.leadpages.net/leadbox/140bd4973f72a2%3A13706bf69b46dc/5638830484881408/">

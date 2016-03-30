@@ -17,18 +17,16 @@ if ($sectionCategory) :
     'category_name' => $category->slug
   )); ?>
 
-  <h2 class="featured-posts">
+  <h2 class="featured-posts featured-travel">
     <a href="<?php echo get_category_link($category->cat_ID); ?>">
       <?php _e($category->description, 'littlebluebag' ); ?>
     </a>
   </h2>
 
   <?php if ( $query->have_posts() ) : ?>
-
                 <?php //// Start the Loop.
         while ( $query->have_posts() ) : $query->the_post(); ?>
-
-          <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix row entry-card'); ?>>
+          <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
             <div class="col-md-6">
                 <a href="<?php echo esc_url(get_permalink()); ?>">
                     <?php the_post_thumbnail('post-thumbnail', array('class' => 'img-responsive')); ?>
@@ -41,14 +39,14 @@ if ($sectionCategory) :
                     esc_html( get_the_date() ),
                     esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) )
                   ); ?>
-              
+
               <p><?php the_excerpt(); ?></p>
             </div>
           </article>
-          
+
 
         <?php endwhile; ?>
-  <?php endif; 
+  <?php endif;
 endif; ?>
 
 

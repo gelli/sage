@@ -14,7 +14,9 @@
 /* @import "components/_wp-classes";
 @import "layouts/_header";
 @import "layouts/_sidebar";
+*/
 @import "layouts/_footer";
+/*
 @import "layouts/_pages";
 @import "layouts/_posts";
 */
@@ -27,13 +29,17 @@
 @import url(http://fonts.googleapis.com/css?family=Great+Vibes);
 
 /* colors */
-@color-yellow: #f8b618; // orangish yellow ;)
-@color-lightblue: #a6cfea;
-@color-darkblue: #147ec9;
 @color-lightgrey: #eee;
 @color-darkgrey: #ccc;
 @color-text-main: #444;
 
+@color-lightblue: #f4faff;
+@color-purple-grey: #cfcedb;
+@color-middle-blue: #96bbbb;
+@color-darkblue: #416a8a;
+@color-yellow: #f4d06f;
+
+@import 'components/cards';
 @import 'components/icons';
 @import 'components/features';
 @import 'components/panels';
@@ -50,11 +56,6 @@
 
 .sam-content [class*="col-"] {
     padding:5px;
-}
-
-.entry-card-content {
-  padding: 0 5px;
-  margin-top: 10px;
 }
 
 .space-top {
@@ -87,8 +88,8 @@ code {
   padding-bottom: 60px;
   border-radius: 50%;
   overflow: hidden;
-  background: @color-lightblue;
-  color: @color-lightgrey;
+  background: @color-darkblue;
+  color: #fff;
   float:left;
   text-align:center;
   margin-right: 10px;
@@ -160,7 +161,7 @@ a {
 
 a:hover,
 a:focus {
-  color: @color-yellow;
+  color: @color-middle-blue;
   text-decoration: underline;
 }
 
@@ -231,7 +232,7 @@ a:focus {
   padding: 5px;
   display: block;
   color: #ffffff;
-  background-color: @color-lightblue;
+  background-color: @color-darkblue;
 }
 
 .page-header {
@@ -309,19 +310,9 @@ a:focus {
   font-family: Arial, sans-serif;
 }
 
-#sam-main-nav.affix {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  width: 100%
-}
 
-.featured-posts,
-#featured-posts {
+.featured-posts {
   padding: 5px;
-  background-color: @color-yellow;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -336,6 +327,18 @@ a:focus {
 }
 
 .featured-posts a:hover {
+  text-decoration: underline;
+}
+
+.featured-photos {
+  background-color: @color-middle-blue;
+}
+
+.featured-travel {
+  background-color: @color-yellow;
+}
+
+.featured-other {
   background-color: @color-darkblue;
 }
 
@@ -492,29 +495,6 @@ li.sam-icon-flag > a:before {
     font-family: 'Glyphicons Halflings';
 }
 
-.social-contact {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.social-contact span.sam-icon {
-  color: @color-darkblue;
-  font-size: 36px;
-}
-
-.social-link {
-  color: #ffffff;
-  line-height: 40px;
-  /* font-size: 16px; */
-  /* font-weight: bold; */
-  vertical-align: middle;
-}
-
-footer a:hover {
-  text-decoration: none;
-  color: @color-lightgrey;
-}
-
 .sam-color-one {
   color: @color-lightblue;
 }
@@ -524,7 +504,7 @@ footer a:hover {
 }
 
 .sam-color-three {
-  color: @color-yellow;
+  color: @color-darkblue;
 }
 
 .sam-color-grey {
@@ -577,14 +557,11 @@ div.sam-section-row {
   padding: 10px 0;
 }
 
-.navbar-sam {
-  background-color: @color-lightblue;
-}
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  background-color: white;
+  background-color: #eee;
   color: @color-text-main;
   -webkit-font-smoothing: antialiased;
 }
@@ -613,22 +590,6 @@ body {
 }
 
 
-footer {
-  margin: 0;
-  background-color: @color-lightblue;
-  color: #fff;
-}
-
-
-footer h1 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 30px;
-}
-
-footer a {
-  color: @color-darkblue;
-}
 
 hr {
   color: @color-lightblue;
@@ -644,46 +605,30 @@ hr {
 }
 
 .widget > h2 > a,
-.sam-blog-content a,
-.navbar-default .navbar-nav > li > a {
+.sam-blog-content a {
   color: @color-darkblue;
 }
 
 .widget > h2 > a:hover,
 .widget > h2 > a:focus,
 .sam-blog-content a:hover,
-.sam-blog-content a:focus,
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
+.sam-blog-content a:focus {
   color: @color-lightgrey;
   background-color: transparent;
 }
 
 .sam-blog-content .active a,
 .sam-blog-content .active a:hover,
-.sam-blog-content .active a:focus,
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.sam-blog-content .active a:focus {
   color: @color-lightgrey;
   background-color: transparent;
 }
 
 .sam-blog-content .disabled a,
 .sam-blog-content .disabled a:hover,
-.sam-blog-content .disabled a:focus,
-.navbar-default .navbar-nav > .disabled > a,
-.navbar-default .navbar-nav > .disabled > a:hover,
-.navbar-default .navbar-nav > .disabled > a:focus {
+.sam-blog-content .disabled a:focus {
   color: @color-darkgrey;
   background-color: transparent;
-}
-
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-  color: #fff;
-  background-color: #69B2C7;
 }
 
 /* custom widget css */
