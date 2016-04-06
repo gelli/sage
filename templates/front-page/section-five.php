@@ -1,8 +1,16 @@
 <?php
-use Roots\Sage\Assets;
+  use Roots\Sage\Assets;
 ?>
+
+<?php
+  if (!get_theme_mod( 'lbb_world_map' )) return;
+  $shortcode = '[rvm_map mapid="'.get_theme_mod('lbb_world_map').'"]';
+  $mapContent = do_shortcode($shortcode);
+  if ($mapContent == $shortcode) return; // plugin not active
+?>
+
 <div class="row">
-  <div class="col-sm-8">
+  <div class="col-sm-4">
 
     <?php
     $sectionCategory = get_theme_mod('lbb_custom_cat_4');
@@ -12,7 +20,7 @@ use Roots\Sage\Assets;
 
       $query = new WP_Query( array (
         'post_type' => 'post',
-        'posts_per_page' => '4',
+        'posts_per_page' => '2',
         'category_name' => $category->slug
       ));
 
@@ -23,7 +31,7 @@ use Roots\Sage\Assets;
               <?php //// Start the Loop.
               while ( $query->have_posts() ) : $query->the_post(); ?>
 
-                  <div class="col-md-6 col-sm-6 col-xs-12 sam-featured">
+                  <div class="col-xs-12 sam-featured">
                       <a class="img-wrap" href="<?php the_permalink(); ?>">
                           <?php the_post_thumbnail("image-wall", array('class' => 'img-responsive lbb-feature-image')); ?>
                           <div><!-- <p><?php echo get_the_title(); ?> </p>--> </div>
@@ -36,14 +44,13 @@ use Roots\Sage\Assets;
     endif; ?>
   </div>
 
-  <div class="col-sm-4">
-    <h2 class="featured-posts featured-other">Newsletter</h2>
+  <div class="col-sm-8">
+    <h2 class="featured-posts featured-other">World Domination</h2>
     <div class="row">
-      <div class="col-sm-12">
-        <a href="https://my.leadpages.net/leadbox/140bd4973f72a2%3A13706bf69b46dc/5638830484881408/">
-          <img class="img-responsive" src="<?php echo Assets\asset_path('images/newsletter2.jpg');?>"src="<?php echo get_template_directory_uri(); ?>/static/images/newsletter2.jpg"/>
-        </a>
-        <script data-leadbox="140bd4973f72a2:13706bf69b46dc" data-url="https://my.leadpages.net/leadbox/140bd4973f72a2%3A13706bf69b46dc/5638830484881408/" data-config="%7B%7D" type="text/javascript" src="//my.leadpages.net/leadbox-901.js"></script>
+      <div class="col-xs-12 sam-featured">
+        <div class="entry-card">
+          <?php echo $mapContent ?>
+        </div>
       </div>
     </div>
   </div>

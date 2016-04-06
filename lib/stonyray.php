@@ -176,6 +176,28 @@ add_action('customize_register', function ($wp_customize) {
    ) ) );
 });
 
+
+/**
+ * Add configuration for world map
+ */
+add_action('customize_register', function ($wp_customize) {
+  $wp_customize->add_section('lbb_section_frontpage_worldmap', array(
+    'title' => __('Frontpage World Map ID', 'littlebluebag'),
+    'priority' => 50
+  ));
+
+  $wp_customize->add_setting('lbb_world_map', array(
+    'default'        => ''
+  ));
+
+  $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'lbb_world_map', array(
+      'section'     => 'lbb_section_frontpage_worldmap',
+      'settings'    => 'lbb_world_map',
+      'label'       => __( 'RVM Maps ID' ),
+      'type'        => 'text'
+  ) ) );
+});
+
 /**
  * i18n enabled category names
  *
