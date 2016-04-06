@@ -35,6 +35,7 @@ add_action( 'after_setup_theme', function () {
     set_post_thumbnail_size( 400, 400 );
     add_image_size("image-wall", 570, 380, true);
     add_image_size("lbb-hero", 1150, 700, true);
+    add_image_size('yarpp-thumbnail', 120, 80, true);
 
     /*
      * Switch default core markup for search form, comment form, and comments
