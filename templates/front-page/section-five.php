@@ -45,7 +45,7 @@
   </div>
 
   <div class="col-sm-8">
-    <h2 class="featured-posts featured-other">World Domination</h2>
+    <h2 class="featured-posts featured-other">#staymarvelous</h2>
     <div class="row">
       <div class="col-xs-12 sam-featured">
         <div class="entry-card">
