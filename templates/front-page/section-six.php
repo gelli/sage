@@ -40,4 +40,19 @@ if ($sectionCategory) :
         <?php endwhile; ?>
     </div>
   <?php endif;
-endif;
+endif; ?>
+
+<?php
+  if (in_array('instagram-feed-pro/instagram-feed.php', get_option('active_plugins'))) {
+?>
+  <div class="row sam-content">
+    <div class="col-xs-12">
+      <h2 class="featured-posts featured-other">LittleBlueBag auf Instagram</h2>
+    </div>
+    <div class="col-xs-12 sam-featured">
+      <div class="entry-card">
+        <?php echo do_shortcode('[instagram-feed]'); ?>
+      </div>
+    </div>
+  </div>
+<?php }
