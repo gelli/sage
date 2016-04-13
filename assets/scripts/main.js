@@ -13,6 +13,37 @@
  * To use the default WordPress version of jQuery, go to lib/config.php and
  * remove or comment out: add_theme_support('jquery-cdn');
  * ======================================================================== */
+ function setCookie(c_name,value,exdays) {
+   var exdate=new Date();
+   exdate.setDate(exdate.getDate() + exdays);
+   var c_value=escape(value) + ((exdays===null) ? "" : "; expires="+exdate.toUTCString());
+   document.cookie=c_name + "=" + c_value;
+ }
+
+ function closeLikeJSBox() {
+     jQuery('#likejsbox').hide( 250 );
+     jQuery('#relikejsbox').show( 250 );
+     setCookie("fbsave", 1337, 30);
+ }
+
+ function reLikeJSBox() {
+     jQuery('#relikejsbox').hide( 0 );
+     jQuery('#likejsbox').addClass('fixed');
+     jQuery('#likejsbox').fadeIn( 250 );
+     setCookie("fbsave", 1338 ,30);
+ }
+
+ function getCookie(c_name) {
+   var i,x,y,ARRcookies=document.cookie.split(";");
+   for (i=0;i<ARRcookies.length;i++) {
+     x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+     y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+     x=x.replace(/^\s+|\s+$/g,"");
+     if (x===c_name) {
+       return unescape(y);
+     }
+   }
+ }
 
 (function($) {
 
@@ -25,7 +56,22 @@
         // JavaScript to be fired on all pages
       },
       finalize: function() {
-        // JavaScript to be fired on all pages, after page specific JS is fired
+        var fbsave = getCookie("fbsave");
+        if(fbsave !== "1337"){
+                var fblog = 0;
+                var top = $('#likejsbox').offset().top + 1000;
+                $(window).scroll(function() {
+                    if(fblog === 0){
+                        if($(this).scrollTop() > top) {
+                            $('#likejsbox').addClass('fixed');
+                            $('#likejsbox').fadeIn( 250 );
+                            fblog++;
+                        }
+                    }
+                });
+        } else {
+            $('#relikejsbox').show( 0 );
+        }
       }
     },
     // Home page
