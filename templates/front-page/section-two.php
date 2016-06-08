@@ -8,7 +8,7 @@ use Roots\Sage\Assets;
       <a href="#">Unser Vlog</a>
     </h2>
     <div class="teaser-box videoWrapper">
-      <iframe src="//www.youtube.com/embed/?list=PLvr0Ef_Rv_qkBq1YZjyF2nLdWyAkwQk7L" frameborder="0" allowfullscreen></iframe>
+      <iframe src="//www.youtube.com/embed/?list=PLvr0Ef_Rv_qmQFCXTYtsT-8lSXSXVnKec" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
   <div class="col-md-4">
