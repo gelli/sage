@@ -11,8 +11,9 @@
     <head>
         <meta charset="<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1">
+        <meta name="p:domain_verify" content="5760a8d8c4193e9b6d5ec7c596e0107f"/>
         <title><?php wp_title( '|', true, 'right' ); ?></title>
-        
+
         <!-- <link rel="profile" href="http://gmpg.org/xfn/11"> -->
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -24,10 +25,9 @@
         <link href="<?php echo get_template_directory_uri(); ?>/static/images/fav/76x76.png" rel="apple-touch-icon" sizes="76x76" />
         <link href="<?php echo get_template_directory_uri(); ?>/static/images/fav/120x120.png" rel="apple-touch-icon" sizes="120x120" />
         <link href="<?php echo get_template_directory_uri(); ?>/static/images/fav/152x152.png" rel="apple-touch-icon" sizes="152x152" />
-        
+
         <!--[if lt IE 9]>
         <script src="<?php echo get_template_directory_uri(); ?>/static/js/html5.js"></script>
         <![endif]-->
         <?php wp_head(); ?>
     </head>
-
