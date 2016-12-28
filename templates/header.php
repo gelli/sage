@@ -15,7 +15,7 @@ if (is_front_page()) { ?>
           </div>
           <div class="row">
             <div class="col-xs-12 text-center">
-              <a href="/ebook-manuell-fotografieren" class="btn-hero btn btn-lg">kostenloses EBOOK</a>
+              <a href="/ebook-manuell-fotografieren" class="btn-hero btn btn-lg">kostenloses eBook</a>
               <a href="/produkt/littlebluebag-fotokurs-lerne-online-fotografieren" class="btn-hero btn btn-lg">Der Fotokurs</a>
             </div>
           </div>
