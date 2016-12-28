@@ -11,10 +11,9 @@
 /*@import "components/_comments";
 @import "components/_forms"; */
 @import "components/_grid";
-/* @import "components/_wp-classes";
+/* @import "components/_wp-classes"; */
 @import "layouts/_header";
-@import "layouts/_sidebar";
-*/
+/* @import "layouts/_sidebar"; */
 @import "layouts/_footer";
 /*
 @import "layouts/_pages";
@@ -26,25 +25,11 @@
 //Load the wp core styles
 @import "components/wp-core";
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
 
-
-
-
-
-@import url(http://fonts.googleapis.com/css?family=Oleo+Script|Racing+Sans+One|Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
-
-/* colors */
-@color-lightgrey: #eee;
-@color-darkgrey: #ccc;
-@color-text-main: #444;
-
-@color-lightblue: #f4faff;
-@color-purple-grey: #cfcedb;
-@color-middle-blue: #96bbbb;
-@color-darkblue: #416a8a;
-@color-yellow: #f4d06f;
+/* @import url(http://fonts.googleapis.com/css?family=Oleo+Script|Racing+Sans+One|Open+Sans); */
+/* @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(http://fonts.googleapis.com/css?family=Great+Vibes); */
 
 @import 'components/hintbox';
 @import 'components/cards';
@@ -74,12 +59,12 @@
   margin-bottom: 20px;
 }
 
-.container {
+/* .container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-}
+} */
 
 code {
   white-space: pre-wrap;
@@ -566,7 +551,8 @@ div.sam-section-row {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
+  font-weight: 400;
   font-size: 16px;
   background-color: @color-lightblue;
   color: @color-text-main;

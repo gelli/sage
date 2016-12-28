@@ -3,7 +3,7 @@
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
 
-.lbb-button(@color; @background; @bgactive) {
+.lbb-button(@color; @coloractive; @background; @bgactive) {
   color: @color;
   background-color: @background;
   border-color: @background;
@@ -14,7 +14,7 @@
   &:active,
   &.active,
   .open > .dropdown-toggle& {
-    color: @color;
+    color: @coloractive;
     background-color: @bgactive;
         border-color: @bgactive;
   }
@@ -52,10 +52,13 @@
 }
 
 .btn-action {
+  .lbb-button(#fff; #fff; @color-yellow; @color-darkblue);
+}
 
-  /* @color-yellow: #f8b618; // orangish yellow ;)
-  @color-lightblue: #a6cfea;
-  @color-darkblue: #147ec9; */
-
-  .lbb-button(#fff; @color-yellow; @color-darkblue);
+.btn-hero {
+  .lbb-button(@lbb-nav-default-color; #fff; @jumbotron-bg; @color-darkblue);
+  width: 20em;
+  margin: 0.5em 2em;
+  padding: 1em 0;
+  font-weight: 600;
 }

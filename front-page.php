@@ -1,25 +1,18 @@
-<div class="content row sam-content">
-  <?php get_template_part('templates/front-page/section', 'hero'); ?>
-</div>
+<?php
+use Roots\Sage\Assets;
+?>
 
 <div class="content row sam-content">
-	<?php
-		get_template_part('templates/front-page/section', 'heroes');
-		// get_template_part('templates/front-page', 'aside');
-		// get_template_part('templates/front-page', 'articles');
-	?>
- </div><!-- /.content -->
-
- <div class="clearfix"></div>
-
- <?php get_template_part('templates/front-page/section', 'one'); ?>
- <?php get_template_part('templates/front-page/section', 'two'); ?>
- <?php get_template_part('templates/front-page/section', 'three'); ?>
- <?php get_template_part('templates/front-page/section', 'four'); ?>
- <?php get_template_part('templates/front-page/section', 'five'); ?>
- <?php get_template_part('templates/front-page/section', 'six'); ?>
-
-<!-- pager -->
-<div class="text-center">
-  <?php // grayskull_numeric_posts_nav(); ?>
+	<?php get_template_part('templates/front-page/section', 'heroes'); ?>
 </div>
+
+<div class="clearfix"></div>
+
+<?php
+  get_template_part('templates/front-page/section', 'one');
+  get_template_part('templates/front-page/section', 'two');
+  get_template_part('templates/front-page/section', 'three');
+  get_template_part('templates/front-page/section', 'four');
+  get_template_part('templates/front-page/section', 'five');
+  get_template_part('templates/front-page/section', 'six');
+?>
