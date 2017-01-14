@@ -57,8 +57,12 @@
 
 .btn-hero {
   .lbb-button(@lbb-nav-default-color; #fff; @jumbotron-bg; @color-darkblue);
-  width: 20em;
+  width: 10em;
   margin: 0.5em 2em;
   padding: 1em 0;
   font-weight: 600;
+
+  @media (min-width: @screen-lg-min) {
+    width: 20em;
+  }
 }
