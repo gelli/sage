@@ -171,8 +171,8 @@ add_action('customize_register', function ($wp_customize) {
        'label'       => __( 'Croppable Image' ),
        'flex_width'  => false, // Allow any width, making the specified value recommended. False by default.
        'flex_height' => false, // Require the resulting image to be exactly as tall as the height attribute (default).
-       'width'       => 1150,
-       'height'      => 700
+       'width'       => 1920,
+       'height'      => 1280
    ) ) );
 });
 

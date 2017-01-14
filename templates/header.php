@@ -2,6 +2,14 @@
 use Roots\Sage\Assets;
 
 if (is_front_page()) { ?>
+  <?php if (get_theme_mod( 'lbb_hero_image' )) { ?>
+  <style>
+    .hero-splash {
+      main-header: url('<?php echo wp_get_attachment_image_url(absint( get_theme_mod( 'lbb_hero_image' )), 'lbb-hero'); ?>')
+    }
+  </style>
+  <?php } ?>
+
   <div class="main-header">
       <?php get_template_part('templates/header', 'navigation'); ?>
         <div class="header-content container text-center ">
