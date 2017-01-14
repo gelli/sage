@@ -40,7 +40,7 @@ use Roots\Sage\Assets;
     <!-- LIKEJS HTML -->
     <div id="likejsbox">
       <div class="header">Werde Fan von LittleBlueBag <span id="close" onClick="closeLikeJSBox();"><img src="<?php echo Assets\asset_path('images/likejs/close.png'); ?>" alt="schliessen" /></span></div>
-      <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Flittlebluebag&amp;width=296&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:296px; height:258px;" allowTransparency="true"></iframe>
+      <iframe src="https://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Flittlebluebag&amp;width=296&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:296px; height:258px;" allowTransparency="true"></iframe>
     </div>
     <div id="relikejsbox" onClick="reLikeJSBox();">
       <img src="<?php echo Assets\asset_path('images/likejs/relikejsbox.jpg'); ?>" alt="oeffnen" />
