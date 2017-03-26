@@ -11,16 +11,6 @@ use Roots\Sage\Assets;
                 </a>
             </div>
         </div>
-        <div class="welcome text-center col-ms-12 hidden-xs">
-            <div>
-                <a href="https://www.facebook.com/littlebluebag" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf101;</a>
-                <a href="https://plus.google.com/112711029813738652601/posts" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf102;</a>
-                <a href="http://www.pinterest.com/katrinandsandra/" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf105;</a>
-                <a href="https://vimeo.com/katrinandsandra" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf109;</a>
-                <a href="https://www.youtube.com/channel/UCeqThqTs9zDDQVvlDIbACxg" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf10a;</a>
-            </div>
-            <hr/>
-        </div>
 
         <div class="text-center col-xs-12 col-sm-6 col-md-12">
             <div class="teaser-box text-left">

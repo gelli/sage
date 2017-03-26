@@ -33,19 +33,19 @@
             <div class="row-centered social-contact">
                 <div class="social-link">
                   <span class="sam-icon">
-                    <a rel="nofollow" href="https://www.facebook.com/littlebluebag" target="_blank"> &#xf101;</a>
+                    <a rel="nofollow" href="https://www.facebook.com/littlebluebag" target="_blank"> &#xe0e4;</a>
                   </span>
                   <a rel="nofollow" href="https://www.facebook.com/littlebluebag" target="_blank">Like us on facebook</a>
                 </div>
                 <div class="social-link">
                   <a rel="nofollow" href="https://plus.google.com/112711029813738652601/posts" target="_blank">follow us on google</a>
                   <span class="sam-icon">
-                    <a rel="nofollow" href="https://plus.google.com/112711029813738652601/posts" target="_blank">&#xf102;</a>
+                    <a rel="nofollow" href="https://plus.google.com/112711029813738652601/posts" target="_blank">&#xe0ea;</a>
                   </span>
                 </div>
                 <div class="social-link">
                   <span class="sam-icon">
-                    <a rel="nofollow" href="https://www.youtube.com/channel/UCeqThqTs9zDDQVvlDIbACxg" target="_blank">&#xf10a;</a>
+                    <a rel="nofollow" href="https://www.youtube.com/channel/UCeqThqTs9zDDQVvlDIbACxg" target="_blank">&#xe0fd;</a>
                   </span>
                   <a rel="nofollow" href="https://www.youtube.com/channel/UCeqThqTs9zDDQVvlDIbACxg" target="_blank">enjoy us on youtube</a></div>
                 <div class="hashbox">
@@ -54,12 +54,12 @@
                 <div class="social-link">
                   <a rel="nofollow" href="http://www.instagram.com/katrinandsandra" target="_blank">Katrin on instagram</a>
                   <span class="sam-icon">
-                    <a rel="nofollow" href="http://www.instagram.com/katrinandsandra" target="_blank">&#xf103;</a>
+                    <a rel="nofollow" href="http://www.instagram.com/katrinandsandra" target="_blank">&#xe0ec;</a>
                   </span>
                 </div>
                 <div class="social-link">
                   <span class="sam-icon">
-                    <a rel="nofollow" href="http://www.instagram.com/littlebluebag" target="_blank">&#xf103;</a>
+                    <a rel="nofollow" href="http://www.instagram.com/littlebluebag" target="_blank">&#xe0ec;</a>
                   </span>
                   <a rel="nofollow" href="http://www.instagram.com/littlebluebag" target="_blank">Sandra on instagram</a>
                 </div>

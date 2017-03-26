@@ -46,4 +46,15 @@ use Roots\Sage\Assets;
       ?>
     </div>
   </div>
+  <div class="row">
+    <div class="social">
+      <a href="https://www.facebook.com/littlebluebag" target="_blank" class="sam-icon-large sam-icon sam-color-three">&#xe0e4;</a>
+      <a href="https://plus.google.com/112711029813738652601/posts" target="_blank" class="sam-icon-large sam-icon sam-color-three">&#xe0ea;</a>
+      <a href="http://www.pinterest.com/littleblueb0122/" target="_blank" class="sam-icon-large sam-icon sam-color-three">&#xe0f2;</a>
+      <a href="https://vimeo.com/katrinandsandra" target="_blank" class="sam-icon-large sam-icon sam-color-three">&#xe0fa;</a>
+      <a href="https://www.youtube.com/channel/UCeqThqTs9zDDQVvlDIbACxg" target="_blank" class="sam-icon-large sam-icon sam-color-three">&#xe0fd;</a>
+      <a href="https://www.instagram.com/littlebluebag" target="__blank" class="sam-icon-large sam-icon sam-color-three">&#xe0ec;</a>
+    </div>
+  </div>
 </nav>
+
