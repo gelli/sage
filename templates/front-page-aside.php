@@ -29,7 +29,7 @@ use Roots\Sage\Assets;
             </div>
         </div>
 
-        <div class="col-xs-12">
+<!--        <div class="col-xs-12">
             <div class="teaser-box sam-boxed text-center">
                 <p>
                     <a target="_blank" rel="nofollow" href="http://www.instagram.com/katrinandsandra" class="sam-icon-size-48 sam-icon sam-color-two">&#xf103;</a>
@@ -40,6 +40,6 @@ use Roots\Sage\Assets;
                     <a target="_blank" rel="nofollow" href="http://www.instagram.com/littlebluebag">Folge <strong>Sandra</strong> auf Instagram</a>
                 </p>
             </div>
-        </div>
+        </div>-->
     </div>
 </div> <!-- col-md-4 -->

@@ -1,6 +1,6 @@
 <!-- Most Read Articles -->
 <?php
-$sectionCategory = get_theme_mod('lbb_custom_cat_5');
+/* $sectionCategory = get_theme_mod('lbb_custom_cat_5');
 if ($sectionCategory) :
 
   $category = lbb_get_category($sectionCategory);
@@ -40,7 +40,7 @@ if ($sectionCategory) :
         <?php endwhile; ?>
     </div>
   <?php endif;
-endif; ?>
+endif; */?> 
 
 <?php
   if (in_array('instagram-feed-pro/instagram-feed.php', get_option('active_plugins'))) {

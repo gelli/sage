@@ -55,7 +55,7 @@ add_action('do_robotstxt', function () {
 
 add_action('pre_get_posts', function ($query) {
   if ($query->is_home() && $query->is_main_query()) {
-        $query->set('posts_per_page', '5');
+        $query->set('posts_per_page', '4');
     }
 });
 

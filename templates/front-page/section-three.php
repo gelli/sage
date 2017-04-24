@@ -13,7 +13,7 @@ if ($sectionCategory) :
 
   $query = new WP_Query( array (
     'post_type' => 'post',
-    'posts_per_page' => '4',
+    'posts_per_page' => '3',
     'category_name' => $category->slug
   )); ?>
 

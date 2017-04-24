@@ -8,7 +8,8 @@ if ($sectionCategory) :
   $query = new WP_Query( array (
     'post_type' => 'post',
     'posts_per_page' => '4',
-    'category_name' => $category->slug,
+    'offset' => 4
+    // 'category_name' => $category->slug,
   ));
 
   if ( $query->have_posts() ) : ?>

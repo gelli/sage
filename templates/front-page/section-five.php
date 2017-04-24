@@ -10,6 +10,7 @@
 ?>
 
 <div class="row">
+<!-- 
   <div class="col-sm-4">
 
     <?php
@@ -34,7 +35,7 @@
                   <div class="col-xs-12 sam-featured">
                       <a class="img-wrap" href="<?php the_permalink(); ?>">
                           <?php the_post_thumbnail("image-wall", array('class' => 'img-responsive lbb-feature-image')); ?>
-                          <div><!-- <p><?php echo get_the_title(); ?> </p>--> </div>
+                          <div></div>
                       </a>
                   </div>
 
@@ -42,13 +43,13 @@
           </div>
       <?php endif;
     endif; ?>
-  </div>
+  </div> -->
 
-  <div class="col-sm-8">
+  <div class="col-sm-12">
     <h2 class="featured-posts featured-other">#staymarvelous</h2>
     <div class="row">
       <div class="col-xs-12 sam-featured">
-        <div class="entry-card">
+        <div>
           <?php echo $mapContent ?>
         </div>
       </div>
