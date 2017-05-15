@@ -62,8 +62,8 @@ function asset_path($filename) {
     $manifest_path = get_template_directory() . DIST_DIR . 'assets.json';
     $manifest = new JsonManifest($manifest_path);
   }
-
-  if (WP_ENV !== 'development' && array_key_exists($file, $manifest->get())) {
+// WP_ENV !== 'development' &&
+  if (array_key_exists($file, $manifest->get())) {
     return $dist_path . $directory . $manifest->get()[$file];
   } else {
     return $dist_path . $directory . $file;
