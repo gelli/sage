@@ -55,8 +55,18 @@ add_action('do_robotstxt', function () {
 
 add_action('pre_get_posts', function ($query) {
   if ($query->is_home() && $query->is_main_query()) {
-        $query->set('posts_per_page', '4');
-    }
+    $query->set('posts_per_page', '4');
+    $query->set('tax_query', array(
+      array(
+        'taxonomy' => 'post_format',
+        'field' => 'slug',
+        'terms' => array(
+          'post-format-video'
+        ),
+        'operator' => 'NOT IN'
+      )
+    ));
+  }
 });
 
 /**
