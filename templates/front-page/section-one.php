@@ -1,9 +1,9 @@
 <!-- Most Read Articles -->
 <?php
-$sectionCategory = get_theme_mod('lbb_custom_cat_1');
-if ($sectionCategory) :
+// $sectionCategory = get_theme_mod('lbb_custom_cat_1');
+// if ($sectionCategory) :
 
-  $category = lbb_get_category($sectionCategory);
+  // $category = lbb_get_category($sectionCategory);
 
   $query = new WP_Query( array (
     'post_type' => 'post',
@@ -14,7 +14,7 @@ if ($sectionCategory) :
 
   if ( $query->have_posts() ) : ?>
 
-    <div class="row sam-content">
+    <?php /* <div class="row sam-content">
       <div class="col-xs-12">
         <h2 class="featured-posts featured-photos">
           <a href="<?php echo get_category_link($category->cat_ID); ?>">
@@ -22,7 +22,7 @@ if ($sectionCategory) :
           </a>
         </h2>
       </div>
-    </div>
+    </div> */ ?>
 
     <div class="row sam-content">
         <?php //// Start the Loop.
@@ -48,4 +48,4 @@ if ($sectionCategory) :
         <?php endwhile; ?>
     </div>
   <?php endif;
-endif;
+// endif;
