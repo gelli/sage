@@ -241,7 +241,7 @@ gulp.task('connect', function() {
     port: 9000
   }, function (){
     browserSync({
-      browser: 'firefoxdeveloperedition',
+      browser: 'safari',
       proxy: config.devUrl,
       snippetOptions: {
         whitelist: ['/wp-admin/admin-ajax.php'],
@@ -249,7 +249,7 @@ gulp.task('connect', function() {
       }
     });
   });
- 
+
   gulp.watch([path.source + 'styles/**/*'], ['styles']);
   gulp.watch([path.source + 'scripts/**/*'], ['jshint', 'scripts']);
   gulp.watch([path.source + 'fonts/**/*'], ['fonts']);
