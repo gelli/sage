@@ -18,7 +18,7 @@
                 </p>
                 <p>
                     <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:mail@littlebluebag.de">mail@littlebluebag.de</a><br/>
-                    <span class="glyphicon glyphicon-phone-alt"></span> +49 (0)176 88121418
+                    <span class="glyphicon glyphicon-phone-alt"></span> +49 (0)151 4191 4292
                 </p>
                 <p>
                     <a href="/impressum/">Impressum</a> | <a href="/agb/">AGB</a> | <a href="/datenschutz/">Datenschutz</a>
