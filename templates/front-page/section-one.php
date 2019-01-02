@@ -34,6 +34,11 @@
                     <div></div>
                 </a>
                 <div class="entry-card-content">
+                  <h3>
+                    <a href="<?php the_permalink(); ?>">
+                      <?php the_title() ?>
+                    </a>
+                  </h3>
                   <?php  printf( '<span class="small entry-date"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> <time class="entry-date" datetime="%2$s">%3$s</time></span>',
                     esc_url( get_permalink() ),
                     esc_attr( get_the_date( 'c' ) ),

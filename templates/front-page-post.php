@@ -15,6 +15,7 @@
         <?php the_post_thumbnail("image-wall", array('class' => 'img-responsive lbb-feature-image')); ?>
       </a>
   </div>
+  <h2><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h2>
   <div style="margin-top: 1em; height: 200px">
     <?php  printf( '<span class="small entry-date"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> <time class="entry-date" datetime="%2$s">%3$s</time></span>',
       esc_url( get_permalink() ),

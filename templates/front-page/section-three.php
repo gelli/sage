@@ -27,6 +27,9 @@ if ($sectionCategory) :
                 <?php //// Start the Loop.
         while ( $query->have_posts() ) : $query->the_post(); ?>
           <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
+          <div class="col-md-12">
+            <h3><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h3>
+          </div>
             <div class="col-md-6">
                 <a href="<?php echo esc_url(get_permalink()); ?>">
                     <?php the_post_thumbnail('post-thumbnail', array('class' => 'img-responsive')); ?>

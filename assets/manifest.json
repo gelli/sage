@@ -27,6 +27,12 @@
       "files": [
         "scripts/tinymce_hintbox.js"
       ]
+    },
+    "fonts": {
+      "files": [
+        "../node_modules/npm-font-open-sans/fonts/**/*.{ttf,woff,woff2,eot,svg}",
+        "fonts/*.{ttf,woff,woff2,eot,svg}"
+      ]
     }
   },
   "config": {
