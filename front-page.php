@@ -12,6 +12,7 @@ use Roots\Sage\Assets;
   get_template_part('templates/front-page/section', 'one');
   get_template_part('templates/front-page/section', 'two');
   get_template_part('templates/front-page/section', 'three');
+  // get_template_part('templates/front-page/section', 'four');
   get_template_part('templates/front-page/section', 'five');
   get_template_part('templates/front-page/section', 'six');
 ?>
